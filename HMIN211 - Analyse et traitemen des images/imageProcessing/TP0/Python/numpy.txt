@@ -1,0 +1,47 @@
+import numpy as np
+import scipy as sc
+import scipy.ndimage
+import scipy.spatial.distance
+import random
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+# argmax  Return the indices of the maximum values.
+# amax    The maximum value of an array along a given axis, propagating any NaNs.
+
+
+#Affichage des images matplotlib dans le notebook
+%matplotlib inline
+#Centrage des images dans la fenetre du navigateur.
+from IPython.core.display import HTML
+HTML("""
+<style>
+.output_png {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+</style>
+""")
+
+def initCentre(centre=5, dimention=2):
+    number = 200
+    out= np.empty((0,2), float)
+    for i in range(centre):
+        res = np.random.randn(number,dimention)*0.05 +np.random.randn(1,2)
+        out = np.append(out, res, axis=0)
+    return out, centre
+    
+test_centre, centre = initCentre(4,2)
+print("test_centre.shape[0],",test_centre.shape[0])
+number_of_colors = centre
+
+color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+             for i in range(number_of_colors)]
+for i in range(centre):
+    myColor = list(np.random.choice(range(256), size=3))
+    start = int(test_centre.shape[0]/centre)*i
+    end = int(test_centre.shape[0]/centre)*(i+1)
+    plt.scatter(test_centre[start:end,0],test_centre[start:end,1],c= color[i])
+plt.show()

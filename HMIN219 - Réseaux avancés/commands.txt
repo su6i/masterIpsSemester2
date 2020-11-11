@@ -1,0 +1,63 @@
+en
+conf t
+host MtpSwitch
+
+
+en
+conf t
+vtp domain montpellier
+vtp mo c
+end
+wr
+
+
+
+
+en
+conf t
+int f0/4
+sw m a
+sw a v 10
+end
+wr
+
+
+int s0/0/0
+router ospf 10
+network 10.100.100.4 0.0.0.3 area 1
+network 10.34.1.0 0.0.0.255 area 1
+network 10.34.2.0 0.0.0.255 area 1
+
+
+-----------------------------------------------------
+Rooting protocols: Static, Dynamic
+
+Dynamic:
+EGP: external gateway protocol, like BGP
+IGP: internal gateway protocol
+
+
+IGP: 
+	--> Hybrid, like EIGRP
+	--> Link state, like OSPFV2, OSPFV3, IS-IS
+	--> Distance vector, like RIP, IGRP, RIPV2
+
+
+
+Route static floutant:
+1- set IP's
+2- set OSPF on two RJ45 networks (and not on serial)
+3- set static route on serial network
+4- change administrative distance for serial network (We set a number more than administrave distance of OSPF, like that we start with OSPF and if there is a problem in this network, Serial network will start to work)
+
+
+show vlan
+show vtp status
+vtp domain paris
+vtp mode clien/server
+
+show ip route
+
+
+
+

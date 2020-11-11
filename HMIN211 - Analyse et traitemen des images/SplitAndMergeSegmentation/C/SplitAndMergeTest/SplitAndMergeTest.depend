@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1584028850 source:d:\master1sem2imagina\traitements images\splitandmergetest\test.cpp
+	<stdio.h>
+	<iostream>
+	<time.h>
+
+1584028068 d:\master1sem2imagina\traitements images\splitandmergetest\include\imagebase.h
+	<stdio.h>
+	<stdlib.h>
+
+1584028191 source:d:\master1sem2imagina\traitements images\splitandmergetest\src\imagebase.cpp
+	"ImageBase.h"
+	<../image_ppm.h>
+
+1584028130 d:\master1sem2imagina\traitements images\splitandmergetest\image_ppm.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<fcntl.h>
+	<iostream>
+	<unistd.h>
+
+1584030733 source:d:\master1sem2imagina\traitements images\splitandmergetest\test2.cpp
+	"ImageBase.h"
+	<stdio.h>
+	<iostream>
+	<time.h>
+

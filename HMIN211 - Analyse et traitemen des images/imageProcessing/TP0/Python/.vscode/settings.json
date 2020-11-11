@@ -1,0 +1,7 @@
+{
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "autopep8",
+    "editor.formatOnSave": true,
+    "python.pythonPath": "/Library/Developer/CommandLineTools/usr/bin/python3"
+}

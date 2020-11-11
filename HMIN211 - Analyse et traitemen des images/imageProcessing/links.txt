@@ -1,0 +1,8 @@
+## Python Imaging Library (PIL )
+### Pillow is the friendly PIL fork
+---------------------------------------------------
+https://courses.cs.washington.edu/courses/cse455/07wi/software/ppmpgm.html
+https://courses.cs.washington.edu/courses/cse455/07wi/software/ppmman.html    # Man page for ppm file
+https://courses.cs.washington.edu/courses/cse455/07wi/software/pgmman.html    # Man page for pgm file
+https://pillow.readthedocs.io/en/stable/index.html                            # Pillow library documentation
+

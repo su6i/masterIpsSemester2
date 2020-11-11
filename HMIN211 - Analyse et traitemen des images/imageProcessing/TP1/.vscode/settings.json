@@ -1,0 +1,6 @@
+{
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "editor.formatOnSave": true,
+    "python.pythonPath": "/Users/su6i/.pyenv/versions/spliteAndMerge/bin/python3"
+}
